@@ -445,4 +445,38 @@
                         <td class="rank">7</td>
                         <td class="team-name">Phoenix Pride</td>
                         <td class="score">205</td>
-                    </tr
+                    </tr>
+                    <tr>
+                        <td class="rank">8</td>
+                        <td class="team-name">Hawk Heroes</td>
+                        <td class="score">190</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Fairwind Falcons Dodgeball Tournament</p>
+        <p>All rights reserved</p>
+    </footer>
+     <script>
+        function showDivision(divisionNumber) {
+            // Remove active class from all buttons
+            document.querySelectorAll('.division-btn').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            document.getElementById(`btn-${divisionNumber}`).classList.add('active');
+            
+            // Hide all division sections
+            document.querySelectorAll('.division-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected division section
+            document.getElementById(`division-${divisionNumber}`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
