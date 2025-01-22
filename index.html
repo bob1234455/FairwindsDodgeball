@@ -277,9 +277,9 @@
     </div>
 
     <div class="divisions-nav">
-        <button id="btn-6" class="division-btn active" onclick="showDivision('6')">Grade 6</button>
-        <button id="btn-7" class="division-btn" onclick="showDivision('7')">Grade 7</button>
-        <button id="btn-8" class="division-btn" onclick="showDivision('8')">Grade 8</button>
+        <button id="btn-6" class="division-btn active" onclick="showDivision(event, '6')">Grade 6</button>
+        <button id="btn-7" class="division-btn" onclick="showDivision(event, '7')">Grade 7</button>
+        <button id="btn-8" class="division-btn" onclick="showDivision(event, '8')">Grade 8</button>
     </div>
 
     <!-- Grade 6 Division -->
@@ -447,6 +447,7 @@
                         <td class="score">205</td>
                     </tr>
                     <tr>
+                        <tr>
                         <td class="rank">8</td>
                         <td class="team-name">Hawk Heroes</td>
                         <td class="score">190</td>
@@ -455,46 +456,12 @@
             </table>
         </div>
     </div>
-    <!DOCTYPE html>
-<html lang="en">
-<!-- Previous head and style content remains the same -->
-
-<body>
-    <header>
-        <h1>Fairwind Falcons Dodgeball Tournament</h1>
-        <p>Professional Tournament Management System</p>
-    </header>
-
-    <div class="tournament-info">
-        <div class="info-card">
-            <h3>Tournament Status</h3>
-            <p>Currently Active</p>
-        </div>
-        <div class="info-card">
-            <h3>Total Teams</h3>
-            <p>24 Teams (8 per Division)</p>
-        </div>
-        <div class="info-card">
-            <h3>Next Matches</h3>
-            <p>Quarterfinals - All Divisions</p>
-        </div>
-    </div>
-
-    <!-- Changed the onclick to use event parameter -->
-    <div class="divisions-nav">
-        <button id="btn-6" class="division-btn active" onclick="showDivision(event, '6')">Grade 6</button>
-        <button id="btn-7" class="division-btn" onclick="showDivision(event, '7')">Grade 7</button>
-        <button id="btn-8" class="division-btn" onclick="showDivision(event, '8')">Grade 8</button>
-    </div>
-
-    <!-- Previous division sections content remains the same -->
 
     <footer>
         <p>© 2025 Fairwind Falcons Dodgeball Tournament</p>
         <p>All rights reserved</p>
     </footer>
 
-    <!-- Updated JavaScript -->
     <script>
         // Add event listeners when the document loads
         document.addEventListener('DOMContentLoaded', function() {
